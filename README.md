@@ -1,26 +1,23 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+##2017-2018 ALANYA MESLEKİ VE TEKNİK ANADOLU LİSESİ INTERNET PROGRAMCILIĞI DERSİ
+Tüm Seneyi Boyunca geliştireceğimiz Mobil uygulamamız 
 
-## How to use this template
+Hazırlayan:'ÖZGE HALİL DUMAN'
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+## PROJE: TOST SÖYLE !!!
+    Kantinde sıra bekleme işine mobil bir çözüm üreteceğiz. Her Pazartesi Derste anlattığım konunun kodlarını burada paylaşacağım.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+### KULLANILAN TEKNOLOJİLER
+    ionic2
+    typescript
+    php
+    ...
+    *Daha Ne olsun*
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
+### BAZI HATIRLATMALAR:
+Bu uygulamayı kendi bilgisayarınızda deneyebilmeniz için [Node.js](https://nodejs.org/) nin sisteminizde kurulu olması gerekmektedir.
+Ardından ionic ve cordova komutlarını kullanabilmeniz için aşağıdaki kodu çalıştırmalısınız.
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
 ```
-
-Then, to run it, cd into `mySideMenu` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
+Eğer uygulamayı telefonunuza çıktı alacaksanız bi zahmet şu [dokumanları](http://ionicframework.com/) okuyun...
 
