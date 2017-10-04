@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { DetayPage } from '../../pages/detay/detay';
 
 @Component({
   selector: 'page-list',
@@ -18,7 +19,12 @@ export class ListPage {
     this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
     'american-football', 'boat', 'bluetooth', 'build'];
 
-    this.items = [];
+    this.items = [
+      {title:"BERKAY YILMAZ",note:"88",icon:this.icons[0]},
+      {title:"OSMAN ÇELMELİ",note:"89",icon:this.icons[1]},
+      {title:"EMRE GÜNGÖR",note:"90",icon:"paper-plane"}
+    ];
+    /*
     for (let i = 1; i < 11; i++) {
       this.items.push({
         title: 'Item ' + i,
@@ -26,11 +32,13 @@ export class ListPage {
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
+    */
   }
 
   itemTapped(event, item) {
+    alert(item);
     // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
+    this.navCtrl.push(DetayPage, {
       item: item
     });
   }
