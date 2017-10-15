@@ -14,7 +14,43 @@
 
 
 <ion-content padding>
-    <div *ngIf="selectedItem" padding>
-        SECTİĞİN MAL: <b>{{selectedItem.title}}</b>
-      </div>
+  <div *ngIf="selectedItem" padding>
+      SECTİĞİN MAL: <b>{{selectedItem.title}}</b>
+    <ion-card>
+      <ion-item>
+          <ion-avatar item-start>
+            <img [src]="selectedItem.resim">
+          </ion-avatar>
+          <h2>{{selectedItem.title}}</h2>
+          <p>{{selectedItem.tinotetle}}</p>
+        </ion-item>
+      
+        <img [src]="selectedItem.resim">
+      
+        <ion-card-content>
+          <p>ALANYA MESLEKİ ve TEKNİK ANADOLU LİSESİ OGRENCİSİ</p>
+        </ion-card-content>
+      
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12 Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comments</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+              11h ago
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      
+      </ion-card>
+  </div>
 </ion-content>

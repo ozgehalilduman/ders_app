@@ -9,7 +9,7 @@ import { DetayPage } from '../../pages/detay/detay';
 export class ListPage {
   selectedItem: any;
   icons: string[];
-  items: Array<{title: string, note: string, icon: string}>;
+  items: Array<{title: string, note: string, icon: string,resim:string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -20,9 +20,9 @@ export class ListPage {
     'american-football', 'boat', 'bluetooth', 'build'];
 
     this.items = [
-      {title:"BERKAY YILMAZ",note:"88",icon:this.icons[0]},
-      {title:"OSMAN ÇELMELİ",note:"89",icon:this.icons[1]},
-      {title:"EMRE GÜNGÖR",note:"90",icon:"paper-plane"}
+      {title:"BERKAY YILMAZ",note:"88",icon:this.icons[0],resim:"assets/ogr1.png"},
+      {title:"OSMAN ÇELMELİ",note:"89",icon:this.icons[1],resim:"assets/ogr7.png"},
+      {title:"EMRE GÜNGÖR",note:"90",icon:"paper-plane",resim:"assets/ogr3.png"}
     ];
     /*
     for (let i = 1; i < 11; i++) {
