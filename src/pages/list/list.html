@@ -8,13 +8,24 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <!-- <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
         <ion-avatar item-start>
           <img [src]="item.resim">
         </ion-avatar>
         <h2>{{item.title}}</h2>
         <p>{{item.note}}</p>
+    </button>
+  </ion-list> -->
+
+  <ion-list>
+    <button ion-item *ngFor="let ogrenci of ogrenciler" (click)="itemTapped($event, ogrenci)">
+        <ion-avatar item-start>
+          <img src="http://www.e-okulrehberlik.com/{{ogrenci.resim}}">
+        </ion-avatar>
+        <h2>{{ogrenci.tc}}</h2>
+        <p>{{ogrenci.ad}}</p>
+        <p>{{ogrenci.resim}}</p>
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
